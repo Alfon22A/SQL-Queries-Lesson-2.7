@@ -58,6 +58,7 @@ ORDER BY Actors DESC, Film;
 /* 7. Using the tables payment and customer and the JOIN command,
 list the total paid by each customer. List the customers alphabetically by last name.
 */
+
 SELECT c.last_name AS "Surname", c.first_name AS "Name", SUM(p.amount) AS "Amount"
 FROM customer AS c
 LEFT JOIN payment AS p
